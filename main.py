@@ -9,7 +9,7 @@ def get_repo_info(repo_url):
     """
     
     repo_url = repo_url.rstrip('.git')
-    #f it it works
+    #f it, it works
     pattern = r'github\.com[:/](?P<owner>[\w\-\._]+)/(?P<repo>[\w\-\._]+)'
     match = re.search(pattern, repo_url)
     if match:
